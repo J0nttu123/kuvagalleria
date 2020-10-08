@@ -11,11 +11,17 @@ if (!isset($_SESSION['username'])) {
 $xml = simplexml_load_file('data/galleria.xml')
 ?>
 
-<?php foreach ($xml->picture as $pic) ?>
-    <div>
-        <h2><?php echo $pic->author; ?></h2>
-        <img src="uploads/<?php echo $pic->file;?>" alt="kuva" />
-        <p><?php echo $pic->date; ?></p>
+<?php foreach ($xml->picture as $pic): ?>
+    <div class="container">
+        <div class="gallery">
+            <div class="zoom">
+                <img src="uploads/<?php echo $pic->file;?>" alt="kuva"/>
+            </div>
+            <div class="desc">
+                <h2><?php echo $pic->author; ?></h2>
+                <p><?php echo $pic->date; ?></p>
+            </div>
+        </div>
     </div>
 <?php endforeach; ?>
 

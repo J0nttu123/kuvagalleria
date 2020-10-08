@@ -6,15 +6,12 @@ if (!isset($_SESSION['username'])) {
 
 ?>
 <?php include('inc/header.php'); ?>
-    <h1>Upload Stuff</h1>
+<div class="container text-center">
+    <h1>Lataa kuva</h1>
     <form action="upload.php" method="post" enctype="multipart/form-data">
-        <label for="author">Author</label>
-        <input type="text" name="author">
-        <br>
         <input type="file" name="fileToUpload">
-        <br>
-        <input type="submit" value="Upload" name="submit">
+        <input type="submit" value="Lataa" name="submit">
     <form>
-
+</div>
 
 <?php include('inc/footer.php'); ?>

@@ -28,13 +28,14 @@ if(file_exists($target_file)){
 }
 
 if (count($errors) > 0){
-    foreach ($errors as $errors){
-        echo $error."br";
+    foreach ($errors as $error){
+        echo $error."<br>";
     }
 } else {
 
-    if (move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file));{
-        echo "The file". basename($_FILES["fileToUpload"]["name"]). "kuva on ladattu";
+    if (move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file)){
+        echo "The file". basename($_FILES["fileToUpload"]["name"]);
+        header('Location: addpicture.php');
         
         //Tallennus XML-tiedostoon
         include_once 'my_functions.php';
