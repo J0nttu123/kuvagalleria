@@ -19,7 +19,7 @@ $xml = simplexml_load_file('data/galleria.xml');
             <div class="desc">
                 <h2><?php echo $pic->author; ?></h2>
                 <p><?php echo $pic->date; ?></p>
-                <input type="submit" value="Hyväksy">
+                <a href="accept.php">Hyväksy</a>
                 <a href="delete.php">Poista</a>
             </div>
         </div>
