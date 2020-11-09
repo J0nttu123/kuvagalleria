@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gallery>
-  <picture>
-    <author>niilo</author>
-    <file>ukko.jpg</file>
-    <date>2020-10-13</date>
-  </picture>
-  <picture>
-    <author>niilo</author>
-    <file>dinomies.jpg</file>
-    <date>2020-10-13</date>
-  </picture>
-  <picture>
+  <picture accept="false">
     <author>niilo</author>
     <file>hallis.png</file>
     <date>2020-10-13</date>
+  </picture>
+  <picture accept="false">
+    <author>niilo</author>
+    <file>images.jpg</file>
+    <date>2020-11-09</date>
   </picture>
 </gallery>

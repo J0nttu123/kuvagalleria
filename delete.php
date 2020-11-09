@@ -21,5 +21,5 @@ $dom->formatOutput = true;
 $dom->loadXML($xml->asXML());
 $dom->save('data/galleria.xml');
 
-header('Location: admin.php');
+header('Location: index.php');
 ?>

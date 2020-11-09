@@ -20,6 +20,7 @@ $xml = simplexml_load_file('data/galleria.xml')
             <div class="desc">
                 <h2><?php echo $pic->author; ?></h2>
                 <p><?php echo $pic->date; ?></p>
+                <a href="delete.php">Poista</a>
             </div>
         </div>
     </div>
